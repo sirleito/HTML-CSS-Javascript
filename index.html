@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<title>Nuestra Página</title>
+	<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded',function(){
+
+		function scroll(argumento) {
+			argumento = argumento - 110;
+			 window.scrollTo(0, argumento);
+		}
+		document.getElementById("productos").onclick = function() {scroll(document.getElementById("seccionProductos").offsetTop)};
+		document.getElementById("servicios").onclick = function() {scroll(document.getElementById("seccionServicios").offsetTop)};
+		document.getElementById("ejemplos").onclick = function() {scroll(document.getElementById("seccionEjemplos").offsetTop)};
+		document.getElementById("redes").onclick = function() {scroll(document.getElementById("seccionRedes").offsetTop)};
+	})
+
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="img/logo.png">
+			<ul>
+				<li id="productos">Productos</li>
+				<li id="servicios">Servicios</li>
+				<li id="ejemplos">Ejemplos</li>
+				<li id="redes">Redes</li>
+			</ul>
+		</nav>
+		<div class="titular">
+			<h1>Título de la página</h1>
+
+			<p>Pequeño parrafo descriptivo</br>que estará alineado a la izquierda</p>
+		</div>
+			
+	</header>
+	<section id="seccionProductos" class="seccionChica">
+		<div class="iconos">
+			<img src="img/hongo.png">
+			<p>Descripcion coherente</br>del ícono en cuestión</p>
+		</div>
+		
+		<div class="iconos">
+			<img src="img/coco.png">
+			<p>Descripcion coherente</br>del ícono en cuestión</p>
+		</div>
+		
+		<div class="iconos">
+			<img src="img/poke.png">
+			<p>Descripcion coherente</br>del ícono en cuestión</p>
+		</div>
+	</section>
+
+	<section id="seccionServicios" class="segundaSeccion">
+		<div class="titular">
+			<h2>Un servicio diferencial</h2>
+			<p>Descripcion del produco o servicio en cuestion y</br>una sugestiva invitacion al usuario a hacer click en el siguiente botón</p>
+			<button class="boton">Explorar</button>			
+		</div>
+	</section>
+	
+	<section id="seccionEjemplos" class="seccionChica cuadrados">
+		<div class="cuadrado uno">
+			<div class="end">
+				<h4>Título chico</h4>
+				<p>pequeña descripción</p>
+			</div>
+		</div>
+
+		<div class="cuadrado dos">
+			<div class="end">
+				<h4>Título chico</h4>
+				<p>pequeña descripción</p>
+			</div>
+		</div>
+		<div class="cuadrado tres">
+			<div class="end">
+				<h4>Título chico</h4>
+				<p>pequeña descripción</p>
+			</div>
+		</div>
+		<div class="cuadrado cuatro">
+			<div class="end">
+				<h4>Título chico</h4>
+				<p>pequeña descripción</p>
+			</div>
+		</div>
+	</section>
+	<section class="cuartaSeccion">
+		
+		<div class="textos juana">
+			<p>"Esta empresa es increible</br>es mucho, pero mucho más de lo que esperaba."</br></br>Juana</p>
+		</div>
+		<div class="textos carlos">
+			<p>"Son re copados los pibes, se saben muchos chistes</br>ah... el producto... es bueno."</br></br>Carlos</p>
+		</div>
+		<div class="textos alberto">
+			<p>"¡Esta companía esta tan buena, que quiero, quiero gritar!</br>¡¡¡aaahhh!!!"</br></br>Alberto</p>
+		</div>
+		<div class="imagenes">
+			<img src="img/pp2.jpg">
+			<img src="img/pp4.jpg">
+			<img src="img/pp5.jpg"> 
+		</div>
+	</section>
+	<footer id="seccionRedes">
+			<p class="mensaje">game over</p>
+			<span class="ion-social-facebook"></span>
+			<span class="ion-social-instagram-outline"></span>
+			<span class="ion-social-twitter"></span>
+		<div class="madeIn">
+			<p>Hecho por <a href="http://www.leovenezia.com/">leovenezia</a> en Latinoamerica</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Etiqueta meta-description: Al igual que el title, solo es visible en los resultados de búsqueda. Los motores de búsqueda no la tienen en cuenta a la hora posicionar. Sin embargo, una buena meta-description puede hacer que tu página reciba más o menos clics.

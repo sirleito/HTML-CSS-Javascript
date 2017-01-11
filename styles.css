@@ -1,0 +1,227 @@
+html{
+	height: 100%;
+	font-family: helvetica;
+}
+body{
+	margin: 0;
+	height: 100%;
+}
+nav{
+	width: 100%;
+	display: inline-block;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(3,169,244,1) 15%);
+	align-items: center;
+}
+nav img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	position: inline;
+	margin: 15px;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	float: right;
+	margin-right: 5px;
+}
+nav ul li{
+	margin-right: 15px;
+	margin-top: 15px;
+	font-size: 18px;
+	cursor: hand;
+	cursor: pointer;
+}
+nav ul li a{
+	text-decoration:none;
+	color: black;
+}
+header{
+	background-image: url("img/header.png");
+	height: 90%;
+	background-size: cover;
+
+}
+.titular{
+	font-size: 35px;
+	padding-top: 3em;
+	margin-left: 4em;
+
+}
+.titular h1{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+.titular p{
+	font-size: 30px;
+	line-height: 26px
+}
+
+.seccionChica{
+	width: 80%;
+	margin: 4% 10% 4% 10%;
+	display: flex;
+	justify-content: space-around;
+}
+.iconos{
+	width: 30%;
+	text-align: center;
+}
+.iconos img{
+	width: 70%;
+	background-size: cover;
+}
+
+.segundaSeccion{
+	width: 100%;
+	background-image: url("img/tetris.png");
+	background-size: cover;
+	height: 60%;
+	background-attachment: fixed;
+}
+
+.titular h2{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+.boton{
+ 	background-color: #03a9f4;
+ 	border-radius: 5%;
+ 	text-decoration: none;
+ 	padding: 10px 20px 10px 20px;
+ 	color: #ffffff;
+ 	font-size: 20px;
+}
+.boton:hover{
+	background: #0091ea;
+}
+
+.cuadrados{
+	height: 65%
+}
+.cuadrado{
+	width: 22%;
+	text-align: center;
+	height: 80%;
+	display: flex;
+	transition: all 1s;
+	-webkit-perspective: 10000;
+	-webkit-transform-style: preserve-3d;
+}
+.cuadrado:hover{
+	transform: rotateY(180deg);
+
+}
+.uno{
+	background-image: url("img/videos.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content:center;
+}
+.dos{
+	background-image: url("img/abuela.jpg");
+	background-size: cover;
+	justify-content:center;
+	color: white;
+}
+.tres{
+	background-image: url("img/pacman.jpg");
+	background-size: cover;
+	justify-content:center;
+	color: white;
+}
+.cuatro{
+	background-image: url("img/control.jpg");
+	background-size: cover;
+	justify-content:center;
+}
+.end{
+	align-self: flex-end; 
+	margin-bottom: 10px;
+}
+.end h4{
+	font-size: 25px;
+	transform: rotateY(180deg);
+}
+.end p{
+	font-size: 18px;
+	transform: rotateY(180deg);
+}
+
+.cuartaSeccion{
+	width: 100%;
+	background: linear-gradient(140deg, rgba(126, 121, 120, 0.6) 0%, rgba(200, 200, 200, 0.6) 20%, rgba(220, 220, 220, 0.6) 70%, rgba(240, 240, 240, 1) 99%);
+	background-size: cover;
+	height: 65%;
+	display: flex;
+	flex-wrap: wrap
+}
+.cuartaSeccion h2{
+	width: 100%;
+	text-align: center;
+}
+.imagenes{
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	align-self: flex-end; 
+	margin-bottom: 10px;
+	justify-content:space-around;
+	display: flex;
+	
+}
+.imagenes img{
+	width: 120px;
+	max-height: 120px;
+	border-radius: 50%;
+	margin-bottom: 5%;
+}
+.textos{
+	width: 100%;
+	margin-top: 1.2em;
+}
+.textos p{
+	text-align: center;
+	font-size: 30px;
+	font-style:italic;
+
+}
+.juana{
+	display: none;
+}
+.carlos{
+
+}
+.alberto{
+	display: none;
+}
+
+footer{
+	background-color: black;
+	text-align: center;
+}
+.mensaje{
+	-webkit-margin-before: 0em;
+	padding-top: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+footer span{
+	color: white;
+	font-size: 28px;
+	margin: 0 10px ;
+	
+}
+.madeIn{
+	color: #e1f5fe;
+	height: 10%;
+	background-color: 
+	font-size:10px;
+	font-style:italic;
+	margin-top: 4em;
+}
+.madeIn a{
+	text-decoration: none;
+	color: #81d4fa;
+}
