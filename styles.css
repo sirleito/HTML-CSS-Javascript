@@ -186,14 +186,11 @@ header{
 	font-style:italic;
 
 }
-.juana{
+.ocultar{
 	display: none;
 }
-.carlos{
-
-}
-.alberto{
-	display: none;
+.mostrar{
+	display: block;
 }
 
 footer{

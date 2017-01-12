@@ -9,14 +9,30 @@
 	document.addEventListener('DOMContentLoaded',function(){
 
 		function scroll(argumento) {
+			argumento = argumento.offsetTop;
 			argumento = argumento - 110;
 			 window.scrollTo(0, argumento);
 		}
-		document.getElementById("productos").onclick = function() {scroll(document.getElementById("seccionProductos").offsetTop)};
-		document.getElementById("servicios").onclick = function() {scroll(document.getElementById("seccionServicios").offsetTop)};
-		document.getElementById("ejemplos").onclick = function() {scroll(document.getElementById("seccionEjemplos").offsetTop)};
-		document.getElementById("redes").onclick = function() {scroll(document.getElementById("seccionRedes").offsetTop)};
-	})
+		document.getElementById("productos").onclick = function() {scroll(document.getElementById("seccionProductos"))};
+		document.getElementById("servicios").onclick = function() {scroll(document.getElementById("seccionServicios"))};
+		document.getElementById("ejemplos").onclick = function() {scroll(document.getElementById("seccionEjemplos"))};
+		document.getElementById("redes").onclick = function() {scroll(document.getElementById("seccionRedes"))};
+
+		var juana = document.getElementById("textoUno");
+		var carlos = document.getElementById("textoDos");
+		var alberto = document.getElementById("textoTres");
+		
+		document.getElementById("juana").onmouseenter = function() {caras(juana, carlos, alberto)};
+		document.getElementById("carlos").onmouseenter = function() {caras(carlos, juana, alberto)};
+		document.getElementById("alberto").onmouseenter = function() {caras(alberto, juana, carlos)};
+		function caras(arg1, arg2, arg3){
+			
+			arg1.style.display = "block";
+			arg2.style.display = "none";
+			arg3.style.display = "none";
+			
+		};
+	});
 
 	</script>
 </head>
@@ -92,19 +108,16 @@
 	</section>
 	<section class="cuartaSeccion">
 		
-		<div class="textos juana">
-			<p>"Esta empresa es increible</br>es mucho, pero mucho más de lo que esperaba."</br></br>Juana</p>
+		<div class="textos">
+			<p id="textoUno" class="ocultar">"Esta empresa es increible</br>es mucho, pero mucho más de lo que esperaba."</br></br>Juana</p>
+			<p id="textoDos" class="mostrar">"Son re copados los pibes, se saben muchos chistes</br>ah... el producto... es bueno."</br></br>Carlos</p>
+			<p id="textoTres" class="ocultar">"¡Esta companía esta tan buena, que quiero, quiero gritar!</br>¡¡¡aaahhh!!!"</br></br>Alberto</p>
 		</div>
-		<div class="textos carlos">
-			<p>"Son re copados los pibes, se saben muchos chistes</br>ah... el producto... es bueno."</br></br>Carlos</p>
-		</div>
-		<div class="textos alberto">
-			<p>"¡Esta companía esta tan buena, que quiero, quiero gritar!</br>¡¡¡aaahhh!!!"</br></br>Alberto</p>
-		</div>
+		
 		<div class="imagenes">
-			<img src="img/pp2.jpg">
-			<img src="img/pp4.jpg">
-			<img src="img/pp5.jpg"> 
+			<img class="img" id="juana" src="img/pp2.jpg">
+			<img class="img" id="carlos" src="img/pp4.jpg">
+			<img class="img" id="alberto" src="img/pp5.jpg"> 
 		</div>
 	</section>
 	<footer id="seccionRedes">
