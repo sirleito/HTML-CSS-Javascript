@@ -8,6 +8,8 @@
 	<script type="text/javascript">
 	document.addEventListener('DOMContentLoaded',function(){
 
+		/* Acá empezamos la función para scrollear la pantalla*/
+
 		function scroll(argumento) {
 			argumento = argumento.offsetTop;
 			argumento = argumento - 110;
@@ -17,6 +19,8 @@
 		document.getElementById("servicios").onclick = function() {scroll(document.getElementById("seccionServicios"))};
 		document.getElementById("ejemplos").onclick = function() {scroll(document.getElementById("seccionEjemplos"))};
 		document.getElementById("redes").onclick = function() {scroll(document.getElementById("seccionRedes"))};
+
+		/* Acá empezamos la función para cambiar el texto en las imagenes */
 
 		var juana = document.getElementById("textoUno");
 		var carlos = document.getElementById("textoDos");
