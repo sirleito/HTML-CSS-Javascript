@@ -40,13 +40,11 @@ header{
 	background-image: url("img/header.png");
 	height: 90%;
 	background-size: cover;
-
 }
 .titular{
 	font-size: 35px;
 	padding-top: 3em;
 	margin-left: 4em;
-
 }
 .titular h1{
 	-webkit-margin-before: 0em;
@@ -56,7 +54,6 @@ header{
 	font-size: 30px;
 	line-height: 26px
 }
-
 .seccionChica{
 	width: 80%;
 	margin: 4% 10% 4% 10%;
@@ -83,6 +80,7 @@ header{
 .titular h2{
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    margin: 0;
 }
 .boton{
  	background-color: #03a9f4;
@@ -105,30 +103,29 @@ header{
 	height: 80%;
 	display: flex;
 	transition: all 1s;
-	-webkit-perspective: 10000;
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 }
 .cuadrado:hover{
-	transform: rotateY(180deg);
-
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 }
 .uno{
 	background-image: url("img/videos.jpg");
 	background-size: cover;
-	display: flex;
 	justify-content:center;
 }
 .dos{
 	background-image: url("img/abuela.jpg");
 	background-size: cover;
 	justify-content:center;
-	color: white;
+	color: #EFEFEF;
 }
 .tres{
 	background-image: url("img/pacman.jpg");
 	background-size: cover;
 	justify-content:center;
-	color: white;
+	color: #EFEFEF;
 }
 .cuatro{
 	background-image: url("img/control.jpg");
@@ -136,16 +133,21 @@ header{
 	justify-content:center;
 }
 .end{
-	align-self: flex-end; 
+	align-self: flex-end;
 	margin-bottom: 10px;
+	-moz-transform: translatez(-100px);
+	-webkit-transform: translatez(-100px);
 }
 .end h4{
 	font-size: 25px;
-	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 }
 .end p{
 	font-size: 18px;
-	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+
 }
 
 .cuartaSeccion{
@@ -172,7 +174,7 @@ header{
 }
 .imagenes img{
 	width: 120px;
-	max-height: 120px;
+	height: 120px;
 	border-radius: 50%;
 	margin-bottom: 5%;
 }
@@ -199,6 +201,7 @@ footer{
 }
 .mensaje{
 	-webkit-margin-before: 0em;
+	margin: 0;
 	padding-top: 2em;
 	color: white;
 	text-transform: uppercase;
@@ -217,8 +220,159 @@ footer span{
 	font-size:10px;
 	font-style:italic;
 	margin-top: 4em;
+	margin-bottom: 0px;
+}
+.madeIn p{
+	margin-bottom: 0;
 }
 .madeIn a{
 	text-decoration: none;
-	color: #81d4fa;
+	color: #81d4fa; 
+}
+@media screen and (max-width:900px){
+	nav{
+		display: none;
+	}
+	.cuadrados{
+		height: 130%;
+		display:flex;
+		flex-wrap: wrap;
+	}
+	.cuadrado{
+		width: 44%;
+		height: 40%;
+	}
+	.segundaSeccion{
+		height: 40%;
+		display: flex;
+		align-items: center;
+	}
+	.segundaSeccion .titular{
+		padding-top: 0;
+	}
+	.titular{
+		margin: 0 10% 0 10%;
+		text-align: center;
+	}
+	.titular h1{
+		margin-bottom: 90px;
+	}
+	.titular p{
+		line-height: 32px;
+	}
+	.titular h2{
+
+		-webkit-margin-before: 1.3em;
+		-webkit-margin-after: 1.3em;
+	}
+	.segundaSeccion p{
+		text-align: left;
+	}
+	.boton{
+	 	padding: 8px 16px 8px 16px;
+	 	font-size: 18px;
+	}
+	.textos{
+		width: 90%;
+		margin: 1.2em 5% 0 5%
+	}
+	.textos p{
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+	.cuadrados{
+		height: 97%;
+		width: 97%;
+		margin:1.5%;
+	}
+	.cuadrado{
+		width: 45%;
+		height: 45%;
+		margin: 2.5%;
+		padding: 0;
+	}
+	.cuartaSeccion{
+		height: 50%
+	}
+	.textos{
+		margin-top: 2em;
+	}
+}
+@media screen and (max-width:600px){
+	.titular{
+		font-size: 30px;
+	}
+	.titular h1{
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 45px;
+	}
+	.titular h2{
+		font-size: 16px;
+	}
+	.titular p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.boton{
+		padding: 6px 12px 6px 12px;
+	 	font-size: 12px;
+	}
+	.segundaSeccion p{
+		-webkit-margin-before: 0.5em;
+		-webkit-margin-after: 0.5em;
+	}
+	.segundaSeccion .titular{
+		padding-top: 0;
+	}
+	.end{
+	-webkit-transform: translatez(-20px);
+	-moz-transform: translatez(-20px);
+	}
+	.cuadrados{
+		height: 100%;
+		width: 100%;
+		margin:0;
+	}
+	.cuadrado{
+		width: 50%;
+		height: 50%;
+		margin: 0;
+		padding: 0;
+	}
+	.cuartaSeccion{
+		height: 80%;
+	}
+	.imagenes img{
+		width: 90px;
+		max-height: 90px;
+	}
+	.textos p{
+		font-size: 24px;
+	}
+	.puf{
+		display: none;
+	}
+	.cuartaSeccion{
+		display: none;
+	}
+}
+@media screen and (max-width:420px){
+	.seccionChica{
+		flex-wrap: wrap;
+	}
+	.iconos{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.segundaSeccion p{
+		-webkit-margin-before: 1.5em;
+		-webkit-margin-after: 1.5em;
+	}
+	.titular{
+		margin: 0em 1em;
+	}
+	.titular p{
+		font-size: 14px;
+	}
 }
