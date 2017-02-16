@@ -229,7 +229,7 @@ footer span{
 	text-decoration: none;
 	color: #81d4fa; 
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:1100px) and (orientation: portrait){
 	nav{
 		display: none;
 	}
@@ -251,17 +251,18 @@ footer span{
 		padding-top: 0;
 	}
 	.titular{
-		margin: 0 10% 0 10%;
+		margin: 0 10%;
 		text-align: center;
 	}
 	.titular h1{
 		margin-bottom: 90px;
+		font-size: 60px;
 	}
 	.titular p{
-		line-height: 32px;
+		line-height: 1em;
+		font-size: 38px;
 	}
 	.titular h2{
-
 		-webkit-margin-before: 1.3em;
 		-webkit-margin-after: 1.3em;
 	}
@@ -269,7 +270,7 @@ footer span{
 		text-align: left;
 	}
 	.boton{
-	 	padding: 8px 16px 8px 16px;
+	 	padding: 10px 20px;
 	 	font-size: 18px;
 	}
 	.textos{
@@ -297,11 +298,20 @@ footer span{
 	.textos{
 		margin-top: 2em;
 	}
+	.madeIn{
+		margin-top: 3em;
+		padding-bottom: 1em;
+	}
 }
-@media screen and (max-width:600px){
-	.titular{
+@media screen and (max-width:800px) and (orientation: portrait){
+	.titular h2{
+		font-size: 40px;
+	}
+	.titular p{
 		font-size: 30px;
 	}
+}
+@media screen and (max-width:600px) and (orientation: portrait){
 	.titular h1{
 		font-size: 30px;
 		text-align: center;
@@ -313,10 +323,6 @@ footer span{
 	.titular p{
 		font-size: 16px;
 		line-height: 20px;
-	}
-	.boton{
-		padding: 6px 12px 6px 12px;
-	 	font-size: 12px;
 	}
 	.segundaSeccion p{
 		-webkit-margin-before: 0.5em;
@@ -357,7 +363,7 @@ footer span{
 		display: none;
 	}
 }
-@media screen and (max-width:420px){
+@media screen and (max-width:420px) and (orientation: portrait){
 	.seccionChica{
 		flex-wrap: wrap;
 	}
@@ -372,7 +378,30 @@ footer span{
 	.titular{
 		margin: 0em 1em;
 	}
-	.titular p{
-		font-size: 14px;
+	.segundaSeccion{
+		height: 70%;
 	}
+	.titular h1{
+		font-size: 34px;
+	}
+	.titular h2{
+		font-size: 28px;
+		margin-top: 0;
+	}
+	.titular p{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	@media screen and (max-width:320px){
+		.titular p{
+			font-size: 20px;
+			line-height: initial;
+	}
+		.titular h2{
+			font-size: 23px;
+	}
+		header .titular p{
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 4px;
+		}
 }
